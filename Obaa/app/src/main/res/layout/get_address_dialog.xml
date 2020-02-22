@@ -1,0 +1,147 @@
+<LinearLayout android:id="@+id/getAddressLL"
+    android:layout_width="300sp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="15sp"
+    android:layout_marginTop="60sp"
+    android:layout_marginEnd="15sp"
+    android:orientation="vertical"
+    android:paddingStart="20sp"
+    android:paddingTop="10sp"
+    android:paddingEnd="20sp"
+
+    android:paddingBottom="15sp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10sp"
+        android:text="Enter Your Details"
+        android:background="@drawable/shadow_view"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginStart="10sp"
+        android:layout_marginEnd="10sp"
+        android:layout_marginBottom="10sp"/>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your Name"
+            android:inputType="text"
+            android:paddingStart="10sp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="14sp" />
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp">
+
+        <EditText
+            android:id="@+id/contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your Contact"
+            android:inputType="text"
+            android:paddingStart="10sp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="14sp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp">
+
+        <EditText
+            android:id="@+id/houseNoAddressET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="House no./ Flat/ Building/ Landmark*"
+            android:inputType="text"
+            android:paddingStart="10sp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="14sp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp">
+
+        <EditText
+            android:id="@+id/colonyAddressET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Colony / Area / Sector*"
+            android:inputType="text"
+            android:paddingStart="10sp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="14sp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp">
+
+        <EditText
+            android:id="@+id/stateAddressET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="State"
+            android:inputType="text"
+            android:paddingStart="10sp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="14sp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp">
+
+        <EditText
+            android:id="@+id/pincodeET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="PinCode"
+            android:inputType="text"
+            android:paddingStart="10sp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="14sp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/saveAddressBT"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_marginTop="20sp"
+        android:text="Save"
+        android:textColor="@color/white"
+        android:background="@drawable/button_primary"/>
+
+</LinearLayout>

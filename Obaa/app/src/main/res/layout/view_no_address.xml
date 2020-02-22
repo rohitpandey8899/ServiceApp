@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:visibility="gone"
+    android:id="@+id/emptyAddressLL"
+    android:orientation="vertical"
+    android:background="@drawable/shadow_view"
+    android:padding="20sp"
+    android:layout_marginTop="100sp"
+    android:layout_marginStart="20sp"
+    android:layout_marginEnd="20sp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+       <!-- <TextView
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Address Found" />
+
+        <TextView
+            android:textSize="14sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You have not added any address yet" />-->
+
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="180.0dip"
+            android:layout_height="180.0dip"
+            android:layout_marginTop="20sp"
+            android:src="@drawable/home"/>
+
+        <Button
+            android:id="@+id/addAddressBT"
+            android:textSize="16sp"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="20sp"
+            android:paddingRight="20sp"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:text="Add address"
+            android:textColor="@color/white"
+            android:background="@drawable/button_primary" />
+
+
+
+    </LinearLayout>

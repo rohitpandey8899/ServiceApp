@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.BookingFragment"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/bokingRL"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="140sp"
+            android:layout_height="140sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="130sp"
+            android:scaleType="fitXY"
+            android:src="@drawable/attachment" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="No Booking Found"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/iv"
+            android:layout_marginTop="10sp"/>
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:text="You Can place booking"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tv1"
+            android:layout_marginTop="5sp"/>
+
+        <Button
+            android:id="@+id/bookServiceBT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_primary"
+            android:layout_below="@id/tv2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40sp"
+            android:text="Book Service"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:paddingStart="30sp"
+            android:paddingEnd="30sp"
+            android:textAllCaps="false"/>
+
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:layout_gravity="center"
+        android:indeterminateDrawable="@drawable/progress_loader"
+        android:indeterminateDuration="2000" />
+
+</FrameLayout>

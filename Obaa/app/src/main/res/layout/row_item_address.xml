@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="15sp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginEnd="20sp"
+        android:layout_toStartOf="@id/deleteAddressBT">
+
+        <TextView
+            android:id="@+id/nameAddressTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mr. Manish Kumar"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/houseNoAddressTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:text="house"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:typeface="normal" />
+
+        <TextView
+            android:id="@+id/colonyAddressTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:text="address"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:typeface="normal" />
+
+        <TextView
+            android:id="@+id/cityAddressTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:text="city"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:typeface="normal" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/deleteAddressBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10sp"
+        android:text="Book Now"
+        />
+
+</RelativeLayout>

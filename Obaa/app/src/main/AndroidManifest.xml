@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.manish.obaa">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning,UnusedAttribute">
+        <activity android:name=".Makeup"></activity>
+        <activity android:name=".Saloon" />
+        <activity android:name=".TattoArt" />
+        <activity android:name=".PackerMover" />
+        <activity android:name=".EventOrg" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Camera" />
+        <activity android:name=".HomeCleanning" />
+        <activity android:name=".HomePets" />
+        <activity android:name=".Fabrication" />
+        <activity android:name=".Mehandi" />
+        <activity android:name=".Painter" />
+        <activity android:name=".PrinterArt" />
+        <activity android:name=".HomeAppliance.Computer" />
+        <activity android:name=".HomeAppliance.Laptop" />
+        <activity android:name=".HomeAppliance.Repair" />
+        <activity android:name=".HomeAppliance.TvLed" />
+        <activity android:name=".HomeAppliance.MricroWave" />
+        <activity android:name=".HomeAppliance.Fridge" />
+        <activity android:name=".HomeAppliance.WashingMec" />
+        <activity android:name=".HomeAppliance.Ro" />
+        <activity android:name=".HomeAppliances" />
+        <activity android:name=".Homee.Homedeep" />
+        <activity android:name=".Homee.Bathroom" />
+        <activity android:name=".Successfull" />
+        <activity android:name=".Homee.Kitchen" />
+        <activity android:name=".Homee.Car" />
+        <activity android:name=".Homee.Carpet" />
+        <activity android:name=".Homee.NumberSofa" />
+        <activity
+            android:name=".Homee.Sofa"
+            android:label="@string/title_activity_sofa" />
+        <activity android:name=".electrician.Geyser" />
+        <activity android:name=".electrician.Mcb" />
+        <activity android:name=".electrician.Lights" />
+        <activity android:name=".electrician.Switches" />
+        <activity android:name=".electrician.Fan" />
+        <activity android:name=".HomeMainActivity" />
+        <activity android:name=".Electrician" />
+        <activity android:name=".plumber.Other" />
+        <activity android:name=".plumber.Sink" />
+        <activity android:name=".plumber.Watertank" />
+        <activity android:name=".plumber.Watertank1" />
+        <activity android:name=".plumber.Shower" />
+        <activity android:name=".plumber.Bathing" />
+        <activity android:name=".plumber.Blockage" />
+        <activity android:name=".plumber.Tapmixer" />
+        <activity android:name=".plumber.Toilet" />
+        <activity android:name=".cctv.Uninstall" />
+        <activity android:name=".cctv.install" />
+        <activity android:name=".cctv.installtion" />
+        <activity android:name=".MainCctvActivity" />
+        <activity android:name=".cooler.CooletRepairActivity" />
+        <activity android:name=".BookingActivity" />
+        <activity android:name=".GetDateTimeActivity" />
+        <activity android:name=".ac.InstallationUninstallation" />
+        <activity android:name=".ac.AcRepairActivity" />
+        <activity android:name=".AddressActivity" />
+        <activity android:name=".SummaryActivity" />
+        <activity android:name=".ac.AcServiceActivity" />
+        <activity android:name=".ac.AcServiceAndRepairActivity" />
+        <activity android:name=".MainCatActivity" />
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".GetCityActivity" />
+        <activity android:name=".startup.SignUp" />
+        <activity android:name=".startup.Login" />
+        <activity android:name=".MainPlumberCat" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

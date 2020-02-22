@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddressActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Click On Your Address"
+        android:layout_marginTop="100sp"
+        android:layout_centerHorizontal="true"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/addressRV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:layout_below="@id/address"/>
+
+    <TextView
+        android:id="@+id/addNewAddressTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addressRV"
+        android:layout_marginTop="10sp"
+        android:text="+ Add New Address"
+        android:padding="10sp"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:typeface="sans"
+        android:textColor="@color/toasty_green"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/emptyAddressLL"
+        android:orientation="vertical"
+        android:background="@drawable/shadow_view"
+        android:padding="20sp"
+        android:layout_marginTop="100sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- <TextView
+             android:textStyle="bold"
+             android:textSize="18sp"
+             android:textColor="@color/colorPrimary"
+             android:layout_gravity="center_horizontal"
+             android:background="@android:color/white"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="No Address Found" />
+
+         <TextView
+             android:textSize="14sp"
+             android:textColor="@color/colorPrimary"
+             android:layout_gravity="center_horizontal"
+             android:background="@android:color/white"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="You have not added any address yet" />-->
+
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="180.0dip"
+            android:layout_height="180.0dip"
+            android:layout_marginTop="20sp"
+            android:src="@drawable/home"/>
+
+        <Button
+            android:id="@+id/addAddressBT"
+            android:textSize="16sp"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="20sp"
+            android:paddingRight="20sp"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:text="Add address"
+            android:textColor="@color/white"
+            android:background="@drawable/button_primary" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bookcancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Book Cancel"
+        android:layout_marginTop="600dp"
+        android:textColor="@color/white"
+        android:background="@color/black"
+        />
+
+
+
+</RelativeLayout>

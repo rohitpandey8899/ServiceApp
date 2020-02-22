@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Obaa</string>
+    <string name="home">Home</string>
+    <string name="booking">Booking</string>
+    <string name="profile">Profile</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="query">Query</string>
+
+    <!--For Sweet Alert Dialog-->
+    <string name="dialog_default_title">Here\'s a message!</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="tap_and_mixer">Tap and Mixer</string>
+    <string name="title_activity_sofa">Sofa</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+</resources>

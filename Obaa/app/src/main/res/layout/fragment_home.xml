@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        tools:ignore="UselessParent">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.manish.obaa.utils.AutoScrollViewpager
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="150sp"
+                    android:layout_margin="10sp"
+                    android:fitsSystemWindows="true" />
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/searchCV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@color/white"
+                    android:paddingBottom="5dp"
+                    app:cardCornerRadius="2sp">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/searchET"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rounded_corner_rectangle"
+                        android:drawableStart="@drawable/ic_search_black_24dp"
+                        android:hint="Search for product..."
+                        android:paddingStart="10dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="15sp" />
+
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/home_applianceGridRL"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5sp"
+                        android:layout_marginTop="10sp"
+                        android:layout_marginEnd="5sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shadow_view"
+                        android:orientation="vertical"
+                        android:padding="10sp">
+
+                        <ImageView
+                            android:layout_width="@dimen/image_width"
+                            android:layout_height="@dimen/image_height"
+                            android:layout_gravity="center"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/home" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:paddingTop="5sp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:maxLines="2"
+                                android:text="Home Appliance"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/electricianGridRL"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5sp"
+                        android:layout_marginTop="10sp"
+                        android:layout_marginEnd="5sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shadow_view"
+                        android:orientation="vertical"
+                        android:padding="10sp">
+
+                        <ImageView
+                            android:layout_width="@dimen/image_width"
+                            android:layout_height="@dimen/image_height"
+                            android:layout_gravity="center"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/electrican" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:paddingTop="5sp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:maxLines="2"
+                                android:text="Electrican"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/plumberGridRL"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5sp"
+                        android:layout_marginTop="10sp"
+                        android:layout_marginEnd="5sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shadow_view"
+                        android:orientation="vertical"
+                        android:padding="10sp">
+
+                        <ImageView
+                            android:layout_width="@dimen/image_width"
+                            android:layout_height="@dimen/image_height"
+                            android:layout_gravity="center"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/plumber" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:paddingTop="5sp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:maxLines="2"
+                                android:text="Plumber"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/acRepairGridRL"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5sp"
+                        android:layout_marginTop="10sp"
+                        android:layout_marginEnd="5sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shadow_view"
+                        android:orientation="vertical"
+                        android:padding="10sp">
+
+                        <ImageView
+                            android:layout_width="@dimen/image_width"
+                            android:layout_height="@dimen/image_height"
+                            android:layout_gravity="center"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/ac" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:paddingTop="5sp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:maxLines="2"
+                                android:text="Air Conditioner"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/saloon"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5sp"
+                        android:layout_marginTop="10sp"
+                        android:layout_marginEnd="5sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shadow_view"
+                        android:orientation="vertical"
+                        android:padding="10sp">
+
+                        <ImageView
+                            android:layout_width="@dimen/image_width"
+                            android:layout_height="@dimen/image_height"
+                            android:layout_gravity="center"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/saloon" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:paddingTop="5sp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:maxLines="2"
+                                android:text="Saloon"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/makeup"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5sp"
+                        android:layout_marginTop="10sp"
+                        android:layout_marginEnd="5sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shadow_view"
+                        android:orientation="vertical"
+                        android:padding="10sp">
+
+                        <ImageView
+                            android:layout_width="@dimen/image_width"
+                            android:layout_height="@dimen/image_height"
+                            android:layout_gravity="center"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/makeup" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:paddingTop="5sp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:maxLines="2"
+                                android:text="Beautician"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <!--For Grid Layout-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20sp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="100sp"
+                            android:background="@color/white"
+                            android:orientation="horizontal">
+                            <RelativeLayout
+                                android:id="@+id/cctvLL"
+                                android:layout_width="0sp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/rec"
+                                android:orientation="vertical"
+                                android:padding="5sp">
+
+                                <ImageView
+                                    android:layout_width="50sp"
+                                    android:layout_height="50sp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10sp"
+                                    android:src="@drawable/cctv" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginBottom="5sp"
+                                    android:text="CCTV"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp" />
+
+                            </RelativeLayout>
+
+
+                            <RelativeLayout
+                                android:id="@+id/laptopll"
+                                android:layout_width="0sp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/rec"
+                                android:orientation="vertical"
+                                android:padding="5sp">
+
+                                <ImageView
+                                    android:layout_width="50sp"
+                                    android:layout_height="50sp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10sp"
+                                    android:src="@drawable/laptop" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginBottom="5sp"
+                                    android:text="Laptop"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/homeCleaningLL"
+                                android:layout_width="0sp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/rec"
+                                android:orientation="vertical"
+                                android:padding="5sp">
+
+                                <ImageView
+                                    android:layout_width="50sp"
+                                    android:layout_height="50sp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10sp"
+                                    android:src="@drawable/toilet5" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginBottom="5sp"
+                                    android:text="Home Cleaning"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="100sp"
+                            android:background="@color/white"
+                            android:orientation="horizontal">
+
+
+                            <RelativeLayout
+                                android:id="@+id/painterGridRL"
+                                android:layout_width="0sp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/rec"
+                                android:orientation="vertical"
+                                android:padding="5sp">
+
+                                <ImageView
+                                    android:layout_width="50sp"
+                                    android:layout_height="50sp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10sp"
+                                    android:src="@drawable/painters" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginBottom="5sp"
+                                    android:text="Painter"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/home_pest"
+                                android:layout_width="0sp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/rec"
+                                android:orientation="vertical"
+                                android:padding="5sp">
+
+                                <ImageView
+                                    android:layout_width="50sp"
+                                    android:layout_height="50sp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10sp"
+                                    android:src="@drawable/home5" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginBottom="5sp"
+                                    android:text="PestController"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp" />
+
+
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:id="@+id/packer"
+                                android:layout_width="0sp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/rec"
+                                android:orientation="vertical"
+                                android:padding="5sp">
+
+                                <ImageView
+                                    android:layout_width="50sp"
+                                    android:layout_height="50sp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10sp"
+                                    android:src="@mipmap/packers" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginBottom="5sp"
+                                    android:text="Packers"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp" />
+
+                            </RelativeLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="100sp"
+                            android:background="@color/white"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:id="@+id/carpainter"
+                                android:layout_width="0sp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/rec"
+                                android:orientation="vertical"
+                                android:padding="5sp">
+
+                                <ImageView
+                                    android:layout_width="50sp"
+                                    android:layout_height="50sp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10sp"
+                                    android:src="@drawable/carp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginBottom="5sp"
+                                    android:text="Carpainter"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp" />
+
+
+                            </RelativeLayout>
+
+
+                            <RelativeLayout
+                                android:id="@+id/fabriction"
+                                android:layout_width="0sp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/rec"
+                                android:orientation="vertical"
+                                android:padding="5sp">
+
+                                <ImageView
+                                    android:layout_width="50sp"
+                                    android:layout_height="50sp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10sp"
+                                    android:src="@drawable/fabric" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginBottom="5sp"
+                                    android:text="Fabrication Work"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp" />
+
+                            </RelativeLayout>
+
+
+                            <RelativeLayout
+                                android:id="@+id/TattoArtGridRL"
+                                android:layout_width="0sp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/rec"
+                                android:orientation="vertical"
+                                android:padding="5sp">
+
+                                <ImageView
+                                    android:layout_width="50sp"
+                                    android:layout_height="50sp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10sp"
+                                    android:src="@drawable/mehndi" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginBottom="5sp"
+                                    android:text="Tatto Art"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp" />
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="100sp"
+                            android:background="@color/white"
+                            android:orientation="horizontal">
+
+
+                            <RelativeLayout
+                                android:id="@+id/mehandi"
+                                android:layout_width="0sp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/rec"
+                                android:orientation="vertical"
+                                android:padding="5sp">
+
+                                <ImageView
+                                    android:layout_width="50sp"
+                                    android:layout_height="50sp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10sp"
+                                    android:src="@drawable/tatto" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginBottom="5sp"
+                                    android:text= "Mehandi Art"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp" />
+
+
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:id="@+id/cemra"
+                                android:layout_width="0sp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/rec"
+                                android:orientation="vertical"
+                                android:padding="5sp">
+
+                                <ImageView
+                                    android:layout_width="50sp"
+                                    android:layout_height="50sp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10sp"
+                                    android:src="@mipmap/camicon" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginBottom="5sp"
+                                    android:text="Photographer"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp" />
+
+                            </RelativeLayout>
+
+
+
+
+
+
+                            <RelativeLayout
+                                android:id="@+id/event"
+                                android:layout_width="0sp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/rec"
+                                android:orientation="vertical"
+                                android:padding="5sp">
+
+                                <ImageView
+                                    android:layout_width="50sp"
+                                    android:layout_height="50sp"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="15dp"
+                                    android:src="@drawable/event" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginBottom="5sp"
+                                    android:text="Event Organizer"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+                <com.manish.obaa.utils.AutoScrollViewpager
+                    android:id="@+id/partnersViewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="150sp"
+                    android:layout_margin="10sp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</FrameLayout>
